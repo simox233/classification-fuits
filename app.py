@@ -123,7 +123,7 @@ def read_image(uploaded_file):
     img = img.resize((32, 32))
     x = np.array(img)
     x = np.expand_dims(x, axis=0)
-    x = x / 255.0
+    #x = x / 255.0
     
     os.remove(temp_file)
     return x, img
